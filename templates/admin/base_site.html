@@ -1,0 +1,18 @@
+{% extends "admin/base.html" %}
+{% load staticfiles %}
+
+{% block title %}{{ title }} | FFPP{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">
+    <a href="/" style="display: inline-block; border-radius: 10px; background-color: #eef; padding: 5px;">
+        <strong>
+            <span style="color: #f80">FF</span><span style="color: #091">PP</span>
+        </strong>
+    </a>
+    &nbsp;
+    <a href="{% url 'admin:index' %}">Administrace</a>
+</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

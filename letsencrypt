@@ -1,0 +1,1 @@
+test -d /etc/letsencrypt/live/ffpp.cz || /srv/letsencrypt/letsencrypt-auto certonly --webroot -w /django/ffpp/htdocs -d ffpp.cz -d www.ffpp.cz
