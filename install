@@ -26,14 +26,19 @@ chown -R root:root       $RO
 chmod -R u=rwX,g=rX,o=rX $RO
 
 
+# configs
+if ! [ -e /etc/nginx/sites-enabled/${NAME}.conf ]; then
+    ln -s $DJANGO_DIR/conf/nginx/${NAME}.conf /etc/nginx/sites-enabled/
+    nginx -t && service nginx reload
+fi
+if ! [ -e /etc/uwsgi/apps-enabled/${NAME}.ini ]; then
+    ln -s $DJANGO_DIR/conf/uwsgi/${NAME}.ini  /etc/uwsgi/apps-enabled/
+    service uwsgi restart
+fi
+
 # certificates
 [ -d /srv/letsencrypt ] || git clone https://github.com/letsencrypt/letsencrypt /srv/letsencrypt
 $DJANGO_DIR/letsencrypt
-
-
-# configs
-[ -e /etc/nginx/sites-enabled/${NAME}.conf ] || ln -s $DJANGO_DIR/conf/nginx/${NAME}.conf /etc/nginx/sites-enabled/
-[ -e /etc/uwsgi/apps-enabled/${NAME}.ini   ] || ln -s $DJANGO_DIR/conf/uwsgi/${NAME}.ini  /etc/uwsgi/apps-enabled/
 
 
 # sync db
