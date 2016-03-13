@@ -65,6 +65,7 @@ INSTALLED_APPS = (
     'easy_thumbnails',
     'sekizai',
     'filer',
+    'cmsplugin_iframe2',
     'cmsplugin_filer_file',
     'cmsplugin_filer_folder',
     'cmsplugin_filer_image',
