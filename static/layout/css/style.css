@@ -27,6 +27,12 @@ h2 {
     font-size: 24pt;
 }
 
+.carousel {
+    background-color: #ccffd0;
+    padding-top: 15px;
+    padding-bottom: 35px;
+}
+
 .carousel-indicators {
     position: relative;
     bottom: 0;
