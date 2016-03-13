@@ -11,7 +11,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         {% for plugin in instance.child_plugin_instances %}
-        <div class="item{% if forloop.first %} active{% endif %}" style="height: 300px">
+        <div class="item{% if forloop.first %} active{% endif %}">
             <div class="container">
                 {% render_plugin plugin %}
             </div>
