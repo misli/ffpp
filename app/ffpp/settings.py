@@ -272,9 +272,7 @@ THUMBNAIL_ALIASES = {
     },
 }
 
-GANALYTICS_TRACKING_CODE = ''
-
-#TEST_RUNNER = None
+GANALYTICS_TRACKING_CODE = 'UA-32025357-2'
 
 CONTAINER_TEMPLATES = {
     'container':    _('container'),
