@@ -28,6 +28,10 @@ h2 {
     font-size: 26px;
 }
 
+.container {
+    position: relative;
+}
+
 .carousel {
     background-color: #ccffd0;
     padding-top: 15px;
@@ -52,6 +56,8 @@ h2 {
     position: absolute;
     bottom: 0;
     right: 0;
+    margin-right: 15px;
+    margin-bottom: 15px;
     font-size: 24px;
 }
 
@@ -61,6 +67,4 @@ h2 {
 .externallinks a:hover {
     color: #081;
 }
-
-
 
