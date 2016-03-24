@@ -33,9 +33,18 @@ h2 {
 }
 
 .carousel {
-    background-color: #ccffd0;
     padding-top: 15px;
-    padding-bottom: 35px;
+    padding-bottom: 50px;
+    background-color: #ccffd0;
+}
+
+.stripe {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.carousel, .green {
+    background-color: #ccffd0;
 }
 
 .carousel-indicators {

@@ -294,7 +294,19 @@ THUMBNAIL_ALIASES = {
 GANALYTICS_TRACKING_CODE = 'UA-32025357-2'
 
 CONTAINER_TEMPLATES = {
-    'container':    _('container'),
-    'carousel':     _('carousel'),
+    'container': {
+        'label':    _('container'),
+        'template': 'container',
+        'context':  {'class': 'white'},
+    },
+    'green': {
+        'label':    _('green container'),
+        'template': 'container',
+        'context':  {'class': 'green'},
+    },
+    'carousel': {
+        'label':    _('carousel'),
+        'template': 'carousel',
+    },
 }
 
