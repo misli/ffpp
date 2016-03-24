@@ -1,6 +1,6 @@
 {% load cms_tags %}
 
-<div class="stripe {{ instance.context.class }}">
+<div class="stripe {{ instance.conf.class }}">
     <div class="container">
         {% for plugin in instance.child_plugin_instances %}
             {% render_plugin plugin %}
