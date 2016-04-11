@@ -74,7 +74,6 @@ INSTALLED_APPS = [
     'cmsplugin_filer_utils',
     'cmsplugin_filer_video',
     'ganalytics',
-    'ffpp',
 ]
 
 MIDDLEWARE_CLASSES = [
