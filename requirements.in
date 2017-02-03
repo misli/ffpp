@@ -1,0 +1,8 @@
+Django<1.11
+django-cms
+djangocms-text-ckeditor
+cmsplugin-container
+cmsplugin-filer
+cmsplugin-iframe2
+django-ganalytics
+python-memcached

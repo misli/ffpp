@@ -10,7 +10,6 @@ PROJECT_DIR  = dirname(realpath(__file__))
 PROJECT_NAME = basename(PROJECT_DIR)
 
 if __name__ == '__main__':
-    sys.path.insert(0, join(PROJECT_DIR, 'app'))
     os.environ.setdefault('DEBUG', 'TEMPLATE')
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', '{}.settings'.format(PROJECT_NAME))
 
