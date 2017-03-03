@@ -287,12 +287,12 @@ CONTAINER_TEMPLATES = {
     'container': {
         'label':    _('container'),
         'template': 'container',
-        'context':  {'class': 'white'},
+        'class': 'white',
     },
     'green': {
         'label':    _('green container'),
         'template': 'container',
-        'context':  {'class': 'green'},
+        'class': 'green',
     },
     'carousel': {
         'label':    _('carousel'),
