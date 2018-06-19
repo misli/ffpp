@@ -1,0 +1,25 @@
+version: '3.4'
+services:
+
+  cms:
+    image: misli/ffpp:latest
+    depends_on:
+      - memcached
+    environment:
+      DEBUG: TEMPLATE
+      SECRET_KEY: secretkey
+      MEMCACHED_LOCATION: memcached:11211
+    ports:
+      - 127.0.0.1:80:80
+    volumes:
+      - ./.ipython:/root/.ipython:z
+      - ./ffpp:/app/ffpp:ro
+      - ./data:/app/data:z
+      - ./media:/app/htdocs/media:z
+      - ./static:/app/static:ro
+      - ./templates:/app/templates:ro
+
+  memcached:
+    image: memcached
+    ports:
+      - 127.0.0.1:11211:11211
